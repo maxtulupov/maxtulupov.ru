@@ -1,11 +1,24 @@
 import { FC } from 'react';
 
+import styles from './Header.module.scss';
+import Logo from './Logo';
+import Menu from './Menu/Menu';
+import Socials from './Socials/Socials';
+
 interface IHeader {}
 
-import styles from './Header.module.scss';
-
 const Header: FC<IHeader> = () => {
-	return <div>Что-то тут будет</div>;
+	return (
+		<header className={styles.header}>
+			<div className={styles.container}>
+				<Logo />
+				<div className={styles.right}>
+					{/* <Menu /> */}
+					<Socials />
+				</div>
+			</div>
+		</header>
+	);
 };
 
 export default Header;
