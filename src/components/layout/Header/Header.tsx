@@ -5,7 +5,7 @@ interface IHeader {}
 import styles from './Header.module.scss';
 
 const Header: FC<IHeader> = () => {
-	return <div>Header</div>;
+	return <div>Что-то тут будет</div>;
 };
 
 export default Header;
