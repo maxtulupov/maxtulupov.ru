@@ -1,1 +1,1 @@
-## maxtulupov.ru - в разраюотке
+## maxtulupov.ru - в разработке
