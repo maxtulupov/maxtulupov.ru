@@ -14,6 +14,7 @@ const Header: FC<IHeader> = () => {
 				<Logo />
 				<div className={styles.right}>
 					{/* <Menu /> */}
+					{/* <SwitchTheme /> */}
 					<Socials />
 				</div>
 			</div>

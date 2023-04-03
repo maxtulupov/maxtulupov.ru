@@ -1,0 +1,41 @@
+.home {
+  @apply relative;
+  height: 800px;
+  .container {
+    @apply max-w-screen-xl mx-auto px-5 flex items-center h-full;
+  }
+
+  .text {
+    @apply w-6/12 pr-5;
+
+    .title {
+      @apply text-5xl font-bold leading-normal;
+
+      &:not(:last-child) {
+        @apply mb-10;
+      }
+
+      .name {
+        @apply text-green-500 px-5 py-2 bg-slate-600 rounded-lg;
+      }
+    }
+
+    .description {
+      @apply text-2xl leading-snug;
+
+      P {
+        &:not(:last-child) {
+          @apply mb-5;
+        }
+      }
+    }
+  }
+
+  .img {
+    @apply w-6/12 absolute right-0 top-0 h-full;
+
+    img {
+      @apply object-cover;
+    }
+  }
+}

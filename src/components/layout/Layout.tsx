@@ -13,7 +13,7 @@ const Layout: FC<ILayout> = ({ children }) => {
 		<div className={styles.wrapper}>
 			<Header />
 			<main className={styles.main}>{children}</main>
-			<Footer />
+			{/* <Footer /> */}
 		</div>
 	);
 };
