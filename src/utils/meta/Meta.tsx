@@ -2,7 +2,7 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { FC } from 'react';
 
-import logoImage from '@/assets/images/logo.svg';
+import logoWhiteImage from '../../../public/logo-white.svg';
 
 import { siteName, titleMerge } from '@/config/seo.config';
 
@@ -25,10 +25,9 @@ const Meta: FC<Seo> = ({ title, description, image, children }) => {
 						<meta name="og:locale" content="en" />
 						<meta name="og:title" content={titleMerge(title)} />
 						<meta name="og:url" content={currentUrl} />
-						<meta name="og:image" content={image || logoImage} />
+						<meta name="og:image" content={image || logoWhiteImage} />
 						<meta name="og:site_name" content={siteName} />
 						<meta name="og:description" content={onlyText(description, 197)} />
-						<meta name="robots" content="noindex, nofollow" />
 					</>
 				) : (
 					<meta name="robots" content="noindex, nofollow" />

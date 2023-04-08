@@ -4,12 +4,17 @@ import styles from './Home.module.scss';
 import meImg from '../../../../public/me.jpg';
 import Image from 'next/image';
 import { siteName } from '@/config/seo.config';
+import Meta from '@/utils/meta/Meta';
 
-interface IHome {}
+interface Home {}
 
-const Home: FC<IHome> = () => {
+const Home: FC<Home> = () => {
 	return (
-		<>
+		<Meta
+			title="Максим Тулупов"
+			description="Привет, меня зовут Максим Тулупов и я Frontend-разработчик"
+			image={String(meImg)}
+		>
 			<div className={styles.home}>
 				<div className={styles.container}>
 					<div className={styles.text}>
@@ -34,7 +39,7 @@ const Home: FC<IHome> = () => {
 				</div>
 			</div>
 			{/* <Stack /> */}
-		</>
+		</Meta>
 	);
 };
 
