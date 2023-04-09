@@ -5,6 +5,7 @@ import meImg from '../../../../public/me.jpg';
 import Image from 'next/image';
 import { siteName } from '@/config/seo.config';
 import Meta from '@/utils/meta/Meta';
+import Portfolio from './portfolio/Portfolio';
 
 interface Home {}
 
@@ -39,6 +40,7 @@ const Home: FC<Home> = () => {
 				</div>
 			</div>
 			{/* <Stack /> */}
+			<Portfolio />
 		</Meta>
 	);
 };
