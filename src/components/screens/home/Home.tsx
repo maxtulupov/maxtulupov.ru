@@ -40,7 +40,7 @@ const Home: FC<Home> = () => {
 				</div>
 			</div>
 			{/* <Stack /> */}
-			<Portfolio />
+			{/* <Portfolio /> */}
 		</Meta>
 	);
 };
