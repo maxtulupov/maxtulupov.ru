@@ -43,6 +43,8 @@ jobs:
             cd /var/www/maxtulupov.ru/html/
             git checkout main
             git pull
+            export NVM_DIR=~/.nvm
+            source ~/.nvm/nvm.sh
             npm i
             npm run build
             pm2 restart maxtulupov.ru
