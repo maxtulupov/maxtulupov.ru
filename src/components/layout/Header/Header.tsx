@@ -13,7 +13,7 @@ const Header: FC<IHeader> = () => {
 			<div className={styles.container}>
 				<Logo />
 				<div className={styles.right}>
-					{/* <Menu /> */}
+					<Menu />
 					{/* <SwitchTheme /> */}
 					<Socials />
 				</div>

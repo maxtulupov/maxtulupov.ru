@@ -32,7 +32,6 @@ const Home: FC<Home> = () => {
 								Скоро тут появится страница портфолио, с которой вы сможете
 								ознакомиться, и не только.
 							</p>
-							<p style={{ display: 'none' }}>4 тест деплоя</p>
 						</div>
 					</div>
 					<div className={styles.img}>
