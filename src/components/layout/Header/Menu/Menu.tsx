@@ -1,18 +1,24 @@
 import Link from 'next/link';
-import { FC } from 'react';
+import { FC, useState } from 'react';
 import styles from './Menu.module.scss';
+import cn from 'classnames';
 
 interface IMenu {}
 
 const Menu: FC<IMenu> = () => {
+	const [menu, setMenu] = useState<boolean>(false);
 	return (
 		<div className={styles.menu}>
-			<button type="button" className={styles.icon}>
+			<button
+				type="button"
+				className={cn(styles.icon, { [styles.icon_active]: menu })}
+				onClick={() => setMenu(!menu)}
+			>
 				<span></span>
 				<span></span>
 				<span></span>
 			</button>
-			<nav className={styles.body}>
+			<nav className={cn(styles.body, { [styles.body_active]: menu })}>
 				<ul className={styles.list}>
 					<li>
 						<Link href="" className={styles.link}>
