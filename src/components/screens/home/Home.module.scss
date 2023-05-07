@@ -1,5 +1,5 @@
 .home {
-  @apply relative py-4 lg:py-0;
+  @apply relative py-4 pb-10 border-b border-gray-300/10 lg:py-0;
   
   @media (min-width:1024px){
     height: 800px;
