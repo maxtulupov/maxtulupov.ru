@@ -1,5 +1,5 @@
 .header {
-  @apply sticky top-0 z-10 w-full backdrop-blur transition-colors duration-500 border-b border-gray-300/20;
+  @apply sticky top-0 z-10 w-full backdrop-blur transition-colors duration-500 border-b border-gray-300/20 overflow-hidden;
   .container {
     @apply max-w-screen-xl mx-auto px-5 py-2 flex items-center justify-between;
   }

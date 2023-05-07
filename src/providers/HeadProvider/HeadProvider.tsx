@@ -2,7 +2,7 @@ import Head from 'next/head';
 import NextNProgress from 'nextjs-progressbar';
 import { FC } from 'react';
 
-import { accentColor } from '@/config/constants';
+import { accentColor, bgColor } from '@/config/constants';
 
 import Favicons from './Favicons';
 
@@ -27,9 +27,9 @@ const HeadProvider: FC<IHeadProvider> = ({ children }) => {
 
 				<Favicons />
 
-				<meta name="theme-color" content={'#013179'} />
-				<meta name="msapplication-navbutton-color" content="#013179" />
-				<meta name="apple-mobile-web-app-status-bar-style" content="#013179" />
+				<meta name="theme-color" content={bgColor} />
+				<meta name="msapplication-navbutton-color" content={bgColor} />
+				<meta name="apple-mobile-web-app-status-bar-style" content={bgColor} />
 				<meta name="yandex-verification" content="03a870b16f0d7fda" />
 			</Head>
 			{children}

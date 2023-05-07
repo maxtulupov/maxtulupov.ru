@@ -4,9 +4,15 @@ import { BsTelegram, BsGithub } from 'react-icons/bs';
 import styles from './Socials.module.scss';
 import Link from 'next/link';
 
-const Socials: FC = () => {
+import cn from 'classnames';
+
+interface ISocials {
+	hideOnMobile?: boolean;
+}
+
+const Socials: FC<ISocials> = ({ hideOnMobile }) => {
 	return (
-		<ul className={styles.list}>
+		<ul className={cn(styles.list, { [styles._hidden]: hideOnMobile })}>
 			<li>
 				<Link href="https://github.com/maxtulupov" target="_blank">
 					<BsGithub />

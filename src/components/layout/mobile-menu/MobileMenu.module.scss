@@ -1,0 +1,7 @@
+.body {
+  @apply fixed w-full h-full -right-full py-28 px-5 bg-slate-800 transition-all overflow-auto md:hidden;
+
+  &.body_active {
+    @apply right-0;
+  }
+}

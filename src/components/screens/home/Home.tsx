@@ -14,7 +14,7 @@ const Home: FC<Home> = () => {
 		<Meta
 			title="Максим Тулупов"
 			description="Привет, меня зовут Максим Тулупов и я Frontend-разработчик"
-			image={String(meImg)}
+			image={String(meImg.src)}
 		>
 			<div className={styles.home}>
 				<div className={styles.container}>
@@ -32,7 +32,6 @@ const Home: FC<Home> = () => {
 								Скоро тут появится страница портфолио, с которой вы сможете
 								ознакомиться, и не только.
 							</p>
-							<p style={{ display: 'none' }}>4 тест деплоя</p>
 						</div>
 					</div>
 					<div className={styles.img}>
