@@ -14,7 +14,7 @@ const Home: FC<Home> = () => {
 		<Meta
 			title="Максим Тулупов"
 			description="Привет, меня зовут Максим Тулупов и я Frontend-разработчик"
-			image={String(meImg)}
+			image={String(meImg.src)}
 		>
 			<div className={styles.home}>
 				<div className={styles.container}>

@@ -18,7 +18,7 @@ const Header: FC<IHeader> = ({ menu, setMenu }) => {
 				<div className={styles.right}>
 					<Menu menu={menu} setMenu={setMenu} />
 					{/* <SwitchTheme /> */}
-					<Socials addStyle="hidden" />
+					<Socials hideOnMobile={true} />
 				</div>
 			</div>
 		</header>

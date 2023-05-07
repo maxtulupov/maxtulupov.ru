@@ -7,12 +7,12 @@ import Link from 'next/link';
 import cn from 'classnames';
 
 interface ISocials {
-	addStyle?: string;
+	hideOnMobile?: boolean;
 }
 
-const Socials: FC<ISocials> = ({ addStyle }) => {
+const Socials: FC<ISocials> = ({ hideOnMobile }) => {
 	return (
-		<ul className={cn(styles.list, addStyle)}>
+		<ul className={cn(styles.list, { [styles._hidden]: hideOnMobile })}>
 			<li>
 				<Link href="https://github.com/maxtulupov" target="_blank">
 					<BsGithub />
