@@ -1,12 +1,14 @@
-import Link from 'next/link';
 import { FC, useState } from 'react';
 import styles from './Menu.module.scss';
 import cn from 'classnames';
+import MenuList from './MenuList';
 
-interface IMenu {}
+interface IMenu {
+	menu: boolean;
+	setMenu: (arg0: boolean) => void;
+}
 
-const Menu: FC<IMenu> = () => {
-	const [menu, setMenu] = useState<boolean>(false);
+const Menu: FC<IMenu> = ({ menu, setMenu }) => {
 	return (
 		<div className={styles.menu}>
 			<button
@@ -18,19 +20,8 @@ const Menu: FC<IMenu> = () => {
 				<span></span>
 				<span></span>
 			</button>
-			<nav className={cn(styles.body, { [styles.body_active]: menu })}>
-				<ul className={styles.list}>
-					<li>
-						<Link href="" className={styles.link}>
-							Статьи
-						</Link>
-					</li>
-					<li>
-						<Link href="" className={styles.link}>
-							Портфолио
-						</Link>
-					</li>
-				</ul>
+			<nav className={styles.body}>
+				<MenuList />
 			</nav>
 		</div>
 	);

@@ -14,6 +14,11 @@ body {
   font-weight: 400;
 
 	@apply bg-slate-900;
+
+	&._lock {
+		overflow: hidden;
+		touch-action: none;
+	}
 }
 
 a {

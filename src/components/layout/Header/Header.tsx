@@ -5,17 +5,20 @@ import Logo from './Logo';
 import Menu from './Menu/Menu';
 import Socials from './Socials/Socials';
 
-interface IHeader {}
+interface IHeader {
+	menu: boolean;
+	setMenu: (arg0: boolean) => void;
+}
 
-const Header: FC<IHeader> = () => {
+const Header: FC<IHeader> = ({ menu, setMenu }) => {
 	return (
 		<header className={styles.header}>
 			<div className={styles.container}>
 				<Logo />
 				<div className={styles.right}>
-					<Menu />
+					<Menu menu={menu} setMenu={setMenu} />
 					{/* <SwitchTheme /> */}
-					<Socials />
+					<Socials addStyle="hidden" />
 				</div>
 			</div>
 		</header>

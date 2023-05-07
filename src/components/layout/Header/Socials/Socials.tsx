@@ -4,9 +4,15 @@ import { BsTelegram, BsGithub } from 'react-icons/bs';
 import styles from './Socials.module.scss';
 import Link from 'next/link';
 
-const Socials: FC = () => {
+import cn from 'classnames';
+
+interface ISocials {
+	addStyle?: string;
+}
+
+const Socials: FC<ISocials> = ({ addStyle }) => {
 	return (
-		<ul className={styles.list}>
+		<ul className={cn(styles.list, addStyle)}>
 			<li>
 				<Link href="https://github.com/maxtulupov" target="_blank">
 					<BsGithub />

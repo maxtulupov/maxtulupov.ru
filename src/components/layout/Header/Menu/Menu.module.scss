@@ -36,24 +36,20 @@
   }
 
   .body {
-    @apply fixed w-full h-full -right-full bg-slate-700 transition-all md:static md:bg-transparent;
-
-    &.body_active {
-      @apply right-0;
-    }
+    @apply hidden static w-full h-full md:flex;
   }
+}
 
-  .list {
-    @apply flex;
+.list {
+  @apply flex flex-col md:flex-row;
+  
+  li {
+    &:not(:last-child) {
+      @apply mb-8 md:mr-8 md:mb-0;
+    }
     
-    li {
-      &:not(:last-child) {
-        @apply mr-8;
-      }
-      
-      .link {
-        @apply text-lg hover:opacity-70 transition-opacity;
-      }
+    .link {
+      @apply text-2xl md:text-lg hover:opacity-70 transition-opacity;
     }
   }
 }

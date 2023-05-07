@@ -1,5 +1,5 @@
 .list {
-  @apply hidden md:flex items-center gap-5;
+  @apply md:flex items-center gap-5;
   li {
     a {
       @apply hover:opacity-70 transition-opacity;
