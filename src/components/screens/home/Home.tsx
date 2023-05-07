@@ -6,6 +6,8 @@ import Image from 'next/image';
 import { siteName } from '@/config/seo.config';
 import Meta from '@/utils/meta/Meta';
 import Portfolio from './portfolio/Portfolio';
+import Stack from './Stack/Stack';
+import CanDo from './CanDo/CanDo';
 
 interface Home {}
 
@@ -16,7 +18,7 @@ const Home: FC<Home> = () => {
 			description="Привет, меня зовут Максим Тулупов и я Frontend-разработчик"
 			image={String(meImg.src)}
 		>
-			<div className={styles.home}>
+			<section className={styles.home}>
 				<div className={styles.container}>
 					<div className={styles.text}>
 						<div className={styles.title}>
@@ -38,8 +40,9 @@ const Home: FC<Home> = () => {
 						<Image src={meImg} alt={siteName} fill priority />
 					</div>
 				</div>
-			</div>
-			{/* <Stack /> */}
+			</section>
+			{/* <CanDo /> */}
+			<Stack />
 			{/* <Portfolio /> */}
 		</Meta>
 	);

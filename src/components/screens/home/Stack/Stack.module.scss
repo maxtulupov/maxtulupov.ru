@@ -1,0 +1,40 @@
+.stack {
+  @apply py-10 lg:py-16 border-b border-gray-300/10;
+
+  .container {
+    @apply max-w-screen-xl mx-auto px-5 h-full;
+  }
+
+  .title {
+    @apply text-2xl font-bold leading-normal mb-5 lg:text-4xl lg:leading-normal lg:mb-7;
+  }
+
+  .content {
+    @apply text-base;
+    h3 {
+      @apply text-lg font-semibold mb-3 lg:mb-5 lg:text-2xl;
+    }
+
+    ul {
+      &:not(:last-child) {
+        @apply mb-5;
+      }
+      li {
+        @apply relative pl-3 before:w-1 before:h-1 before:rounded-full before:absolute before:left-0 before:top-2 before:bg-white;
+        &:not(:last-child) {
+          @apply mb-1;
+        }
+      }
+    }
+
+    p {
+      &:not(:last-child) {
+        @apply mb-4;
+      }
+    }
+
+    .ps {
+      @apply font-medium text-lg;
+    }
+  }
+}
