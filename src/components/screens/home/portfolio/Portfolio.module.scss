@@ -1,0 +1,11 @@
+.portfolio {
+  @apply py-10 lg:py-16 border-b border-gray-300/10;
+
+  .container {
+    @apply max-w-screen-xl mx-auto px-5 h-full;
+  }
+
+  .title {
+    @apply text-2xl font-bold leading-normal mb-5 lg:text-4xl lg:leading-normal lg:mb-7;
+  }
+}
