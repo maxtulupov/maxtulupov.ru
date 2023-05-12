@@ -6,8 +6,8 @@ import Image from 'next/image';
 import { siteName } from '@/config/seo.config';
 import Meta from '@/utils/meta/Meta';
 import Portfolio from './portfolio/Portfolio';
-import Stack from './stack/Stack';
 import CanDo from './CanDo/CanDo';
+import Stack from './stack/Stack';
 
 interface Home {}
 
