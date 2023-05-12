@@ -7,7 +7,7 @@ import { siteName } from '@/config/seo.config';
 import Meta from '@/utils/meta/Meta';
 import Portfolio from './portfolio/Portfolio';
 import CanDo from './CanDo/CanDo';
-import Stack from './stack/Stack';
+import Stack from './Stack/Stack';
 
 interface Home {}
 
